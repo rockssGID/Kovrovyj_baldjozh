@@ -8,3 +8,6 @@ prepros.config
 Prepros.crt
 start-project.bat
 .stylelintrc.json
+build-sass.cmd
+build-js.cmd
+build-html.cmd
