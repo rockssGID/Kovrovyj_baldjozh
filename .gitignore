@@ -3,6 +3,7 @@ src/
 satting/
 gulpfile.mjs
 package.json
+package-lock.json
 prepros.config
 Prepros.crt
 start-project.bat
