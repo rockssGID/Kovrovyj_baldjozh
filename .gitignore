@@ -1,6 +1,6 @@
 node_modules/
 src/
-satting/
+gulp/
 gulpfile.mjs
 package.json
 package-lock.json
