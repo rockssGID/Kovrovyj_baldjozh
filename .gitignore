@@ -1,0 +1,9 @@
+node_modules/
+src/
+satting/
+gulpfile.mjs
+package.json
+prepros.config
+Prepros.crt
+start-project.bat
+.stylelintrc.json
