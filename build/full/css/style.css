@@ -194,9 +194,9 @@ img {
   width: 200px;
   height: 40px;
   cursor: pointer;
+  background-color: white;
   border-radius: 15px;
   transition: transform 0.3s ease;
-  background-color: white;
 }
 
 .minClass-list-bassic-menu__link:hover {
@@ -208,8 +208,8 @@ img {
   position: absolute;
   display: flex;
   flex-direction: column;
-  width: 200px;
   gap: 10px;
+  width: 200px;
   margin-top: 10px;
   display: none;
 }
@@ -247,5 +247,11 @@ main {
     position: absolute;
     bottom: 70px;
     grid-row: 1;
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+  .minClass-list-bassic-menu__link {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
   }
 }

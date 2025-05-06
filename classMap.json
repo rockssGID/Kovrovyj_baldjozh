@@ -8,9 +8,15 @@
   "minClass-list-dop-menu__item--basket": "g",
   "minClass-list-dop-menu__item--home": "h",
   "minClass-list-dop-menu__link--burger-menu": "i",
-  "minClass-list-bassic-menu": "j",
-  "minClass-list-bassic-menu__item": "k",
-  "minClass-list-bassic-menu__item--clic": "l",
-  "minClass-list-bassic-menu__link": "m",
-  "minClass-list-bassic-menu__catalog": "n"
+  "minClass-button-burger-menu": "j",
+  "minClass-list-bassic-menu": "k",
+  "minClass-container-bassic-menu": "l",
+  "minClass-list-bassic-menu__item": "m",
+  "minClass-list-bassic-menu__link": "n",
+  "minClass-button-catalog": "o",
+  "minClass-list-bassic-menu__catalog": "p",
+  "minClass-container-catalog": "q",
+  "minClass-list-bassic-menu__catalog--active": "r",
+  "minClass-list-bassic-menu--active": "s",
+  "minClass-list-dop-menu__link--active": "t"
 }
