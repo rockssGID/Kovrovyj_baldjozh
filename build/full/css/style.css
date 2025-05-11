@@ -82,7 +82,6 @@ img {
   gap: 60px;
   width: 100%;
   padding: 0 30px;
-  background-color: rosybrown;
 }
 
 .minClass-list-dop-menu {
@@ -178,9 +177,12 @@ img {
 
 .minClass-list-catalog-menu {
   position: fixed;
-  display: none;
-  flex-direction: column;
-  gap: 10px;
+  display: block;
+  width: 200px;
+}
+
+.minClass-list-catalog-menu__item {
+  margin-top: 10px;
 }
 
 .minClass-list-catalog-menu__link {
@@ -188,7 +190,7 @@ img {
   gap: 5px;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: 100%;
   height: 40px;
   background-color: #fff;
   border-radius: 15px;
@@ -233,11 +235,11 @@ main {
     position: fixed;
     bottom: 60px;
     flex-direction: column;
+    gap: 10px;
     justify-content: center;
     width: 200px;
     background-color: unset;
     box-shadow: none;
-    gap: 10px;
   }
 
   .minClass-list-bassic-menu__item {
@@ -250,6 +252,5 @@ main {
 
   .minClass-list-catalog-menu {
     bottom: 60px;
-    display: flex;
   }
 }
