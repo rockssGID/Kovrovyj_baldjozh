@@ -11,9 +11,10 @@
   "minClass-list-bassic-menu__item": "j",
   "minClass-list-bassic-menu--btn-no-size-catalog": "k",
   "minClass-list-bassic-menu__link": "l",
-  "minClass-list-catalog-menu": "m",
-  "minClass-list-catalog-menu__item": "n",
-  "minClass-list-catalog-menu__link": "o",
-  "minClass-list-catalog-menu--active": "p",
-  "minClass-list-bassic-menu--active": "q"
+  "minClass-list-bassic-menu__item--display-none": "m",
+  "minClass-list-catalog-menu": "n",
+  "minClass-list-catalog-menu__item": "o",
+  "minClass-list-catalog-menu__link": "p",
+  "minClass-list-catalog-menu--active": "q",
+  "minClass-list-bassic-menu--active": "r"
 }
