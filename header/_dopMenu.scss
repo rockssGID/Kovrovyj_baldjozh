@@ -1,0 +1,89 @@
+@use 'common/index' as *;
+
+$dop: '.minClass-list-dop-menu';
+
+
+#{$dop} {
+  z-index: 900;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0 0 0 / 50%);
+
+  @include res(tablet) {
+    width: 200px;
+  }
+
+  &__item {   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--burger-menu {
+      display: none;
+
+      @include res(tablet) {
+        display: flex;
+      }
+    }
+
+    &--home {
+      display: none;
+
+      @include res(tablet) {
+        display: flex;
+      }
+    }
+  }
+  
+  &__link {
+    display: flex;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    
+    &:hover {
+      background-color: rgb(199, 136, 222);
+      transform: scale(1.1);
+
+      svg {
+        fill: #fff;
+      }
+    }
+
+    @include res(hover) {
+      &:hover {
+        background-color: unset;
+        transform: none;
+
+        svg {
+          fill: #595959;
+        }
+      }
+
+      &:active {
+        background-color: rgb(199, 136, 222);
+        transform: scale(1.1);
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+
+    svg {
+      position: relative;
+      width: 25px;
+      height: 25px;
+      fill: #595959;
+    }
+  }
+
+
+
+}
