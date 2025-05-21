@@ -16,7 +16,17 @@
   \***********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n\r\n\r\n\r\n\r\n(0,_modules_menu_js__WEBPACK_IMPORTED_MODULE_0__.initMenu)();\n\n//# sourceURL=webpack://web-project/./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/footer.js */ \"./src/js/modules/footer.js\");\n\r\n\r\n\r\n\r\n\r\n(0,_modules_menu_js__WEBPACK_IMPORTED_MODULE_0__.initMenu)();\r\n(0,_modules_footer_js__WEBPACK_IMPORTED_MODULE_1__.initFooter)();\n\n//# sourceURL=webpack://web-project/./src/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/footer.js":
+/*!**********************************!*\
+  !*** ./src/js/modules/footer.js ***!
+  \**********************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   initFooter: () => (/* binding */ initFooter)\n/* harmony export */ });\nfunction initFooter () {\r\n  document.addEventListener('DOMContentLoaded', () => {\r\n    const containerCatalogFooter = document.querySelector('.minClass-list-catalog-footer');\r\n    const catalogItems = containerCatalogFooter.querySelectorAll('.minClass-list-catalog-footer__item');\r\n\r\n    const containerStockFooter = document.querySelector('.minClass-list-stock-footer');\r\n    const stockItems = containerStockFooter.querySelectorAll('.minClass-list-stock-footer__item');\r\n\r\n    const containerInfoFooter = document.querySelector('.minClass-list-info-footer');\r\n    const infoItems = containerInfoFooter.querySelectorAll('.minClass-list-info-footer__item');\r\n\r\n    if (catalogItems.length > 3) {\r\n      containerCatalogFooter.classList.add('minClass-list-common-footer--grid');\r\n    };\r\n\r\n    if (stockItems.length > 3) {\r\n      containerStockFooter.classList.add('minClass-list-common-footer--grid');\r\n    };\r\n\r\n    if (infoItems.length > 3) {\r\n      containerInfoFooter.classList.add('minClass-list-common-footer--grid');\r\n    };\r\n  });\r\n};\n\n//# sourceURL=webpack://web-project/./src/js/modules/footer.js?");
 
 /***/ }),
 
