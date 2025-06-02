@@ -16,7 +16,17 @@
   \***********************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/footer.js */ \"./src/js/modules/footer.js\");\n\r\n\r\n\r\n\r\n\r\n(0,_modules_menu_js__WEBPACK_IMPORTED_MODULE_0__.initMenu)();\r\n(0,_modules_footer_js__WEBPACK_IMPORTED_MODULE_1__.initFooter)();\n\n//# sourceURL=webpack://web-project/./src/js/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_menu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/menu.js */ \"./src/js/modules/menu.js\");\n/* harmony import */ var _modules_footer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/footer.js */ \"./src/js/modules/footer.js\");\n/* harmony import */ var _modules_bg_color_logo_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/bg-color-logo.js */ \"./src/js/modules/bg-color-logo.js\");\n\r\n\r\n\r\n\r\n\r\n(0,_modules_menu_js__WEBPACK_IMPORTED_MODULE_0__.initMenu)();\r\n(0,_modules_footer_js__WEBPACK_IMPORTED_MODULE_1__.initFooter)();\r\n(0,_modules_bg_color_logo_js__WEBPACK_IMPORTED_MODULE_2__.initBgColor)();\n\n//# sourceURL=webpack://web-project/./src/js/app.js?");
+
+/***/ }),
+
+/***/ "./src/js/modules/bg-color-logo.js":
+/*!*****************************************!*\
+  !*** ./src/js/modules/bg-color-logo.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   initBgColor: () => (/* binding */ initBgColor)\n/* harmony export */ });\nfunction initBgColor() {\r\n  document.addEventListener('DOMContentLoaded', () => {\r\n    const container = document.querySelector('#minId-container-rect');\r\n    const colorBg = document.querySelector('#minId-color-bg');\r\n    const colorBg2 = document.querySelector('#minId-color-bg-2');\r\n\r\n    function containerColorRect() {\r\n      const containerRect = container.getBoundingClientRect();\r\n\r\n      colorBg.style.height = `${containerRect.height}px`;\r\n      colorBg.style.width = `${containerRect.width}px`;\r\n      colorBg2.style.height = `${containerRect.height}px`;\r\n      colorBg2.style.width = `${containerRect.width}px`;\r\n    }\r\n\r\n    let opacity = false;\r\n    function switchColorBg() {\r\n      if (!opacity) {\r\n        colorBg.style.opacity = 0;\r\n      } else {\r\n        colorBg.style.opacity = 1;\r\n      }\r\n\r\n      opacity = !opacity;\r\n    };\r\n\r\n    //setInterval(switchColorBg, 3000);\r\n\r\n    window.addEventListener('load', containerColorRect);\r\n    window.addEventListener('resize', containerColorRect);\r\n  })\r\n\r\n}\r\n\r\n// containerCatalogMenu.style.top = `${containerBtnCatalogRect.bottom}px`;\n\n//# sourceURL=webpack://web-project/./src/js/modules/bg-color-logo.js?");
 
 /***/ }),
 
