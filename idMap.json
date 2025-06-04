@@ -1,11 +1,11 @@
 {
-  "minId-container-dop-menu": "bg",
-  "minId-button-burger-menu": "bh",
-  "minId-container-bassic-menu": "bi",
-  "minId-container-botton-catalog-menu": "bj",
-  "minId-button-catalog-menu": "bk",
-  "minId-container-catalog-menu": "bl",
-  "minId-color-bg": "bm",
-  "minId-color-bg-2": "bn",
-  "minId-container-rect": "bo"
+  "minId-container-dop-menu": "bq",
+  "minId-button-burger-menu": "br",
+  "minId-container-bassic-menu": "bs",
+  "minId-container-botton-catalog-menu": "bt",
+  "minId-button-catalog-menu": "bu",
+  "minId-container-catalog-menu": "bv",
+  "minId-color-bg": "bw",
+  "minId-color-bg-2": "bx",
+  "minId-container-rect": "by"
 }
