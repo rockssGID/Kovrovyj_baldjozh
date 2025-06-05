@@ -210,17 +210,17 @@ img {
 }
 
 .minClass-swiper__slide {
-  position: relative;
+  position: absolute;
   z-index: 1;
   display: flex;
-  flex: 0 0 33.33%;
   align-items: center;
   justify-content: center;
+  width: 33.33%;
   height: 100%;
   overflow: hidden;
   pointer-events: none;
-  opacity: 1;
-  transform: scale(0.9);
+  opacity: 0;
+  transform: scale(0.8);
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -247,7 +247,23 @@ img {
 .minClass-swiper__slide--active {
   z-index: 3;
   opacity: 1;
-  transform: scale(1);
+  transform: scale(1) translateX(0);
+}
+
+.minClass-swiper__slide--prev {
+  transform: translateX(-100%);
+}
+
+.minClass-swiper__slide--next {
+  transform: translateX(100%);
+}
+
+.minClass-swiper__slide--position-prev-prev {
+  transform: translateX(-200%);
+}
+
+.minClass-swiper__slide--position-next-next {
+  transform: translateX(200%);
 }
 
 .minClass-swiper__button {

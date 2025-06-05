@@ -64,7 +64,9 @@
   "minClass-swiper__slide--next": "bk",
   "minClass-swiper__slide--prev": "bl",
   "minClass-swiper__slide--active": "bm",
-  "minClass-list-catalog-menu--active": "bn",
-  "minClass-list-common-footer--grid": "bo",
-  "minClass-list-bassic-menu--active": "bp"
+  "minClass-swiper__slide--position-prev-prev": "bn",
+  "minClass-swiper__slide--position-next-next": "bo",
+  "minClass-list-catalog-menu--active": "bp",
+  "minClass-list-common-footer--grid": "bq",
+  "minClass-list-bassic-menu--active": "br"
 }
