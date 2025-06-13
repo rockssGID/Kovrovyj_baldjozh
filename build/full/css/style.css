@@ -215,12 +215,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 33.33%;
+  width: 300px;
   height: 100%;
   overflow: hidden;
+  border-radius: 15px;
   pointer-events: none;
   opacity: 0;
-  transform: scale(0.8);
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -242,28 +242,14 @@ img {
   z-index: 2;
   opacity: 1;
   transform: scale(0.9);
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .minClass-swiper__slide--active {
   z-index: 3;
   opacity: 1;
-  transform: scale(1) translateX(0);
-}
-
-.minClass-swiper__slide--prev {
-  transform: translateX(-100%);
-}
-
-.minClass-swiper__slide--next {
-  transform: translateX(100%);
-}
-
-.minClass-swiper__slide--position-prev-prev {
-  transform: translateX(-200%);
-}
-
-.minClass-swiper__slide--position-next-next {
-  transform: translateX(200%);
+  transform: scale(1);
+  transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .minClass-swiper__button {
@@ -651,6 +637,9 @@ img {
 
 .minClass-container-hero__svg {
   position: absolute;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   animation-name: rotate-right;
   animation-iteration-count: infinite;
 }
@@ -681,6 +670,7 @@ img {
 }
 
 .minClass-container-hero__title {
+  padding: 0 15px;
   font-family: TDVolshebstvo;
   color: #595959;
   text-align: center;
@@ -750,7 +740,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 30%;
-  min-width: 400px;
+  min-width: 300px;
 }
 
 .minClass-container-features__item svg {
@@ -781,6 +771,10 @@ img {
 .minClass-container-features__process-text > p {
   color: #595959;
   text-align: center;
+}
+
+.minClass-top-and-stock {
+  background-color: #595959;
 }
 
 @media (width <= 768px) {
