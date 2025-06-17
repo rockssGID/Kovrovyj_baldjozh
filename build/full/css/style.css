@@ -211,16 +211,16 @@ img {
 
 .minClass-swiper__slide {
   position: absolute;
-  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 300px;
   height: 100%;
   overflow: hidden;
-  border-radius: 15px;
   pointer-events: none;
+  border-radius: 15px;
   opacity: 0;
+  filter: drop-shadow(0 0 9px rgba(0, 0, 0, 0.5));
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -241,14 +241,12 @@ img {
 .minClass-swiper__slide--next {
   z-index: 2;
   opacity: 1;
-  transform: scale(0.9);
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .minClass-swiper__slide--active {
   z-index: 3;
   opacity: 1;
-  transform: scale(1);
   transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
@@ -268,11 +266,11 @@ img {
 }
 
 .minClass-swiper__button--prev {
-  left: 0;
+  left: 10px;
 }
 
 .minClass-swiper__button--next {
-  right: 0;
+  right: 10px;
 }
 
 .minClass-list-dop-menu {
@@ -774,10 +772,48 @@ img {
 }
 
 .minClass-top-and-stock {
-  background-color: #595959;
+  display: block;
+  justify-items: center;
+  padding-bottom: 50px;
+  background: radial-gradient(circle, #ab8bdb, #65a4e2);
+  box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.5);
+}
+
+.minClass-top-and-stock__title {
+  width: 90%;
+  padding: 50px 0 10px;
+  margin-bottom: 20px;
+  font-family: TDVolshebstvo;
+  color: #fff;
+  text-align: center;
+  border-bottom: #fff 4px solid;
+}
+
+.minClass-top-and-stock__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.minClass-top-and-stock__btn a {
+  font-family: TDVolshebstvo;
+  font-size: 1.375rem;
+  color: #595959;
 }
 
 @media (width <= 768px) {
+  .minClass-swiper__button {
+    width: 35px;
+    height: 35px;
+  }
+
   .minClass-list-dop-menu {
     width: 200px;
   }
